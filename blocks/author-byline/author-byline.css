@@ -1,0 +1,76 @@
+main .author-byline {
+  border-top: 2px solid var(--border-color, #e0e0e0);
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+main .author-byline .author-byline-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+main .author-byline .author-byline-photo {
+  flex-shrink: 0;
+}
+
+main .author-byline .author-byline-photo picture,
+main .author-byline .author-byline-photo img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main .author-byline .author-byline-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+main .author-byline .author-byline-name {
+  font-family: var(--heading-font-family, sans-serif);
+  font-size: var(--body-font-size-m, 1rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+main .author-byline .author-byline-occupations {
+  font-size: var(--body-font-size-s, 0.875rem);
+  color: var(--secondary-color, #6b6b6b);
+  margin: 0;
+}
+
+main .author-byline .author-byline-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+main .author-byline .author-byline-social-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  border: 1px solid currentcolor;
+  border-radius: 2rem;
+  font-size: var(--body-font-size-s, 0.875rem);
+  text-decoration: none;
+  color: var(--text-color, #202020);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+main .author-byline .author-byline-social-link:hover {
+  background-color: var(--link-color, #035fe6);
+  color: #fff;
+  border-color: var(--link-color, #035fe6);
+}
+
+@media (width >= 600px) {
+  main .author-byline .author-byline-photo picture,
+  main .author-byline .author-byline-photo img {
+    width: 100px;
+    height: 100px;
+  }
+}

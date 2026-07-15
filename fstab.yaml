@@ -1,0 +1,4 @@
+mountpoints:
+  /:
+    url: https://da.live/kapilrajoriattn/eds-ai-demo-fast
+    type: markup
